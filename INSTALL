@@ -1,0 +1,49 @@
+Installation Steps:
+
+ + Read the DEPS file
+
+ + Download and unpack fqscan tarball:
+
+   # cd /usr/src
+   # wget http://fqscan.ucodev.org/download/fqscan-0.3.tar.gz
+   # tar zxvf fqscan-x.xx.tar.gz
+   # cd fqscan-x.xx
+
+
+ + Build gnuradio (v3.6.x) and all required dependencies via the install/build-gnuradio script (by Marcus D. Leech)
+
+   # cd /usr/src/fqscan-x.xx
+   # chown -R sudo_user:group install/
+   # su sudo_user
+   $ cd install
+   $ ./build-gnuradio -o
+
+
+ + Create a MySQL database and a fqscan user:
+
+   # mysql -uroot -p
+   mysql> CREATE DATABASE fqscan_v1;
+   mysql> CREATE USER fqscan IDENTIFIED BY 'fqscan_user_password';
+   mysql> GRANT ALL PRIVILEGES ON fqscan_v1.* TO fqscan;
+
+
+ + Edit config files and replace default credentials:
+
+   # cd /usr/src/fqscan-x.xx
+   # vi fqplot/src/config.py
+   # vi www/src/lib/config.php
+
+
+ + Build and Install fqscan:
+
+   # cd /usr/src/fqscan-x.xx
+   # ./do
+   (When asked for MySQL settings, insert the settings you used to create the user and database in the previous step)
+
+
+ + Notes:
+
+  - Web Interface will be installed on /var/www/fqscan
+  - Utilities and dependencies will be installed on /usr/local
+
+

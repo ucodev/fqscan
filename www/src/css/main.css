@@ -1,0 +1,168 @@
+/*
+ *	fqscan - RF Signal Scanner and Plotter - Web Interface
+ *	Copyright (C) 2014  Pedro A. Hortas (pah@ucodev.org)
+ * 
+ *	File: main.css
+ *
+ *	Authors:
+ *		- Pedro A. Hortas (pah@ucodev.org)
+ *
+ *	Last Update: 2014/04/15
+ * 
+ *	This program is free software: you can redistribute it and/or modify
+ *	it under the terms of the GNU General Public License as published by
+ *	the Free Software Foundation, either version 3 of the License, or
+ *	(at your option) any later version.
+ *	
+ *	This program is distributed in the hope that it will be useful,
+ *	but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *	GNU General Public License for more details.
+ *	
+ *	You should have received a copy of the GNU General Public License
+ *	along with this program.  If not, see <http://www.gnu.org/licenses/>. 
+ */
+
+
+body {
+	color: #00FF00;
+	background-color: black;
+	font-size: 80%;
+	font-family: monospace;
+	font-weight: bold;
+}
+
+input {
+	margin: 2px;
+	background-color: black;
+	color: #BBFFBB;
+	text-align: center;
+	background-repeat:repeat-x;
+	border: 1px solid #00FF00;
+	height: 18px;
+	width: 128px;
+}
+
+select {
+	margin: 2px;
+	background-color: black;
+	color: #BBFFBB;
+	text-align: center;
+	background-repeat:repeat-x;
+	border: 1px solid #00FF00;
+	height: 22px;
+	width: 130px;
+}
+
+hr {
+	border: 1px solid #00FF00;
+}
+
+table {
+	border: 0;
+}
+
+fieldset {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px double #99FF99;
+}
+
+a.button_off:link, a.button_off:visited {
+	display: table-cell;
+	border: 1px solid #00FF00;
+	outline: none;
+	color: #00FF00;
+	background-color: transparent;
+	text-decoration: none;
+	height: 20px;
+	width: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+a.button_off:hover, a.button_off:active {
+	display: table-cell;
+	border: 1px solid #00FF00;
+	outline: 1px solid #00FF00;
+	color: #99FF99;
+	background-color: transparent;
+	text-decoration: none;
+	height: 20px;
+	width: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+a.button_on:link, a.button_on:visited {
+	display: table-cell;
+	border: 1px solid #00FF00;
+	outline: none;
+	color: black;
+	background-color: #00FF00;
+	text-decoration: none;
+	height: 20px;
+	width: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+a.button_on:hover, a.button_on:active {
+	display: table-cell;
+	border: 1px solid #00FF00;
+	outline: 1px solid #00FF00;
+	color: black;
+	background-color: green;
+	text-decoration: none;
+	height: 20px;
+	width: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.control {
+	padding-top: 15px;
+	padding-bottom: 25px;
+	display: table;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.control_table {
+	border: 0;
+	margin: 0 auto;
+}
+
+.control_table_left {
+	border: 0;
+	float: left;
+	width: 120px;
+}
+
+.control_table_right {
+	border: 0;
+	float: right;
+	width: 120px;
+}
+
+.results {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: table;
+	margin: 0 auto;
+}
+
+.current_img {
+	max-width: 100%;
+	width: auto;
+}
+
+.chart_params {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: table;
+	margin: 0 auto;
+}
+

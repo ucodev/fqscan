@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ ! -f .done ]; then
+	echo "Nothing to undo. Run 'do' to build the project."
+	exit 1
+fi
+
+echo "Cleaning..."
+
+/usr/bin/make clean
+
+if [ $? -eq 0 ]; then
+	rm -f .done
+	rm -f .install_dir
+	rm -f .compiler
+	echo "Cleaned."
+	exit 0
+fi
+
+echo "Error occured."
+
